@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZnmgHZG4SgzgdhR8mvXPyMiYwgNJfG_Q",
+    authDomain: "lostfound-b80fc.firebaseapp.com",
+    databaseURL: "https://lostfound-b80fc.firebaseio.com",
+    projectId: "lostfound-b80fc",
+    storageBucket: "lostfound-b80fc.appspot.com",
+    messagingSenderId: "919579258670"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<p id = "position"> 
+
+<script>
+	//Get the resources that have been stored
+	let resourceRef = firebase.database().ref("resources");
+
+	//use the once function to get all data from the Firebase
+	resourceRef.once('value', function(snapshot) {
+	  //Loop through each unique "child" of the data
+	  snapshot.forEach(function(childSnapshot) {
+		var childKey = childSnapshot.key;
+		var childData = childSnapshot.val();
+
+
+		//display name of resource only if qty > 0
+		if( childData.qty > 0) {
+		
+			//document.write(childData.name + "<br>");
+			document.getElementById("position").innerHTML += childData.name + "<BR>";
+		}
+		
+		
+	  });
+	});
+
+</script>
+</p>
+<button id="home" type="button">Go Back to Home!</button>
+
+</body>
+</html>
