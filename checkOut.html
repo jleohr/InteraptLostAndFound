@@ -35,14 +35,17 @@
 		var childData = childSnapshot.val();
 
 
-		//access each property of the child
-		document.write(childData.name + "<br>");
+		//display name of resource only if qty > 0
+		if( childData.qty > 0) {
+			document.write(childData.name + "<br>");
+		}
 		
 		
 	  });
 	});
 
 </script>
+<button id="home" type="button">Go Back to Home!</button>
 
 </body>
 </html>
