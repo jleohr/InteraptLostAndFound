@@ -1,26 +1,34 @@
+﻿<!DOCTYPE html>
 <html>
-<title>Lost and Found</title>
-<body>
-Welcome to the Lost and Found!
-<br>
-I changed it.
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
+    <meta charset="UTF-8">
+    <title>Firebase Tutorial 😄</title>
+  </head>
+  <body>
+     
+                Item Name
+                <input id="name" type="text" name="name"><br>
 
-<br>
-It is now connected to a FireBase database.....I think.
-</body>
+                Item Description
+                <input id="description" type="text" name="description"><br>
+               
+                Qty
+                <input id="qty" type="text" name="qty"><br>
+                
+                Owner Location
+                <input id="location" type="text" name="ownerLocation"><br>
+                
+                Owner Name
+                <input id="ownerName" type="text" name="ownerName"><br>
 
-<!-- This code came from FireBase in order to connect to the database we created there -->
-<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCZnmgHZG4SgzgdhR8mvXPyMiYwgNJfG_Q",
-    authDomain: "lostfound-b80fc.firebaseapp.com",
-    databaseURL: "https://lostfound-b80fc.firebaseio.com",
-    projectId: "lostfound-b80fc",
-    storageBucket: "",
-    messagingSenderId: "919579258670"
-  };
-  firebase.initializeApp(config);
-</script>
+                <button id="save" type="button">Click Me!</button>
+ 
+                <script src= "scripts.js"></script>
+  </body>
 </html>
