@@ -39,5 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     
         resourceRef.push(newResource);
+		window.location = "index.html"
     }  ); 
 });
