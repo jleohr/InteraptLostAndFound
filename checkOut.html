@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by TEMPLATED
 http://templated.co
@@ -60,8 +60,8 @@ Released   : 20130902
 	<!--Content for the page goes here-->
 	<p height=100>&nbsp;</p>
 	
-	<h2>Check Out Item</h2>
-  <select id = "position">
+	<h2>Check Out Item </h2>
+  <select id = "position"> 
 
 <script>
 	//Get the resources that have been stored
@@ -79,7 +79,6 @@ Released   : 20130902
 		if( childData.qty > 0) {
 		
 			//document.write(childData.name + "<br>");
-
 			document.getElementById("position").innerHTML += "<option>" + childData.name + "</option>";
 		}
 		
@@ -87,8 +86,9 @@ Released   : 20130902
 	  });
 	});
 
-
 </script></select>
+
+
 	
 	
 	
