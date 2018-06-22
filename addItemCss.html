@@ -13,7 +13,7 @@ Released   : 20130902
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>Interapt Lost and Found App ðŸ˜„</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
@@ -30,15 +30,86 @@ Released   : 20130902
 	</div>
 	<div id="menu">
 		<ul>
-			<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li><a href="indexCss.html" accesskey="1" title="">Homepage</a></li>
 			<li><a href="#" accesskey="3" title="">Check Out Item</a></li>
 			<li><a href="#" accesskey="4" title="">Check In Item</a></li>
-			<li><a href="#" accesskey="5" title="">Create New Item</a></li>
+			<li class="active"><a href="#" accesskey="5" title="">Create New Item</a></li>
 		</ul>
 	</div>
 </div>
 <div id="page" class="container">
 	<!--Content for the page goes here-->
+	<h2>Create New Item</h2>
+  <table align="center">
+    <tr>
+		<td width=250>Item Name</td>
+		<td width=700><input id="name" type="text" name="name"></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>Item Description</td>
+		<td><input id="description" type="text" name="description"></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>Qty</td>
+		<td><input id="qty" type="text" name="qty"></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>Owner Location</td>
+		<td><input id="location" type="text" name="ownerLocation"></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>Owner Name</td>
+		<td><input id="ownerName" type="text" name="ownerName"></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>Borrower Name</td>
+		<td><input id="ownerName" type="text" name="borrowerName"></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td colspan=2><button id="save" type="button">Click Me!</button></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	</table>
 	
 	
 	
@@ -48,4 +119,5 @@ Released   : 20130902
 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
 </body>
+<script src= "firebaseExample.js"></script>
 </html>
