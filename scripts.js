@@ -38,6 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			checkIn: new Date(),
         };
     
-        resourceRef.append(newResource);
+        resourceRef.push(newResource);
     }  ); 
 });
